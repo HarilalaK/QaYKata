@@ -1,15 +1,21 @@
 {
-  "name": "backend",
+  "name": "smart-metre-backend",
   "version": "1.0.0",
-  "description": "Qaykata backend version 1.0.0",
-  "license": "ISC",
-  "author": "HarilalaK",
-  "type": "commonjs",
-  "main": "index.js",
+  "description": "Smart-Métré Quincaillerie - Backend API",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "init-db": "node src/config/database.js"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "sqlite3": "^5.1.7",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
